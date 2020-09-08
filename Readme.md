@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Сергей Шепелев](https://up.htmlacademy.ru/htmlcss/29/user/1418427).
-* Наставник: [Александр Лялихов] (https://htmlacademy.ru/profile/id983003).
+* Наставник: [Александр Лялихов](https://htmlacademy.ru/profile/id983003).
 
 ---
 
