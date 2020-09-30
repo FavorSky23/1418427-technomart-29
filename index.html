@@ -4,15 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <!-- link rel="stylesheet" href="css/style.css"> -->
-  <!-- В лекции было сказано что стили находятся в папке CSS. Вопрос: они должны там изначально находться или мы должны их сами подобрать и туда прописать? -->
+  <link rel="stylesheet" href="css/normilize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
     <div class="page-header-top">
       <img class="page-header-logo" src="https://via.placeholder.com/150x100" alt="логотип мазагазина Техномарт">
-      <input class="page-header-search" type="search" name="search" placeholder="Поиск">
+      <input class="page-header-search" type="search" name="search" placeholder="Поиск:" placeholder="Поиск:"
+        value="Поиск:">
       <a class="bookmarks-link" href="#">Закладки:</a>
       <a class="cart-link" href="#">Корзина:</a>
       <a class="checkout-link" href="#">Оформить заказ</a>
@@ -22,8 +23,10 @@
       строительных материалов <br>
       и инструментов для ремонта
     </p>
-    <a class="header-phone-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
-    <p class="header-address-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+    <a class="header-phone-link" href="tel:+78125550555">
+      <h4>+7 (812) 555-05-55</h4>
+    </a>
+    <p class="header-address-caption">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     <aside class="user-nav">
       <h2 class="visually-hidden">Личный кабинет</h2>
       <a class="login-link" href="#">Войти</a>
@@ -60,48 +63,48 @@
     <section class="services">
       <h2 class="visually-hidden">Услуги</h2>
       <ul class="services-list">
-        <li class="service-item">
+        <li class="service-materials">
           <h3 class="service-materials-caption">Материалы</h3>
           <a class="service-link" href="#">На любой вкус</a>
         </li>
-        <li class="service-item">
-          <h3 class="service-tool-caption">Инструмент</h3>
+        <li class="service-tools">
+          <h3 class="service-tools-caption">Инструмент</h3>
           <a class="service-link" href="#">На все случаи</a>
         </li>
-        <li class="service-item">
+        <li class="service-techs">
           <h3 class="service-tech-caption">Техника</h3>
           <a class="service-link" href="#">Для стройки</a>
         </li>
-        <li class="service-item">
+        <li class="service-gallery">
           <h3 class="service-products-caption">Перфораторы</h3>
           <p class="catalog-text">Настоящие мужские игрушки</p>
           <a class="button catalog-link" href="catalog.html">Открыть каталог</a>
           <button class="gallery-button-back">Назад</button>
           <button class="gallery-button-next">Вперед</button>
         </li>
-        <li class="service-item">
+        <li class="service-discounts">
           <h3 class="service-discount-caption">Скидки 50%</h3>
           <a class="service-link" href="#">На 350 товаров</a>
         </li>
-        <li class="service-item">
+        <li class="service-delivery">
           <h3 class="service-delivery-caption">Доставка</h3>
-          <a class="service-link href=" #">Бесплатно</a>
+          <a class="service-link" href=" #">Бесплатно</a>
         </li>
       </ul>
     </section>
 
     <section class="pop-products">
-      <div class="pop-title-row">
+      <div>
         <h2 class="pop-products-title">Популярные товары:</h2>
-        <a class="pop-products-link" href="#">Все популярные товары</a>
+        <a class="button pop-products-link" href="#">Все популярные товары</a>
       </div>
       <article class="pop-item">
         <a class="pop-item-link" href="#">
           <img src="https://via.placeholder.com/150x100" alt="">
-          <p>Перфоратор BOSCH BFG 9000</p>
+          <p class="pop-name">Перфоратор BOSCH BFG 9000</p>
         </a>
         <p class="old-price">32500 Р.</p>
-        <button class="buy-item" type="button" name="buy">25500 Р.</button>
+        <button class="button buy-item" type="button" name="buy">25500 Р.</button>
       </article>
       <article class="pop-item">
         <a class="pop-item-link" href="#">
@@ -109,7 +112,7 @@
           <p>Перфоратор BOSCH BFG 3000</p>
         </a>
         <p class="old-price">22500 Р.</p>
-        <button class="buy-item" type="button" name="buy">15500 Р.</button>
+        <button class="button buy-item" type="button" name="buy">15500 Р.</button>
       </article>
       <article class="pop-item">
         <a class="pop-item-link" href="#">
@@ -117,21 +120,21 @@
           <p>Перфоратор BOSCH BFG 6000</p>
         </a>
         <p class="old-price">30500 Р.</p>
-        <button class="buy-item" type="button" name="buy">25500 Р.</button>
+        <button class="button buy-item" type="button" name="buy">25500 Р.</button>
       </article>
       <article class="pop-item">
         <a class="pop-item-link" href="#">
           <img src="https://via.placeholder.com/150x100" alt=""><br>
           <p>Перфоратор BOSCH BFG 2000</p>
         </a>
-        <button class="buy-item" type="button" name="buy">12500 Р.</button>
+        <button class="button buy-item" type="button" name="buy">12500 Р.</button>
       </article>
     </section>
 
     <section class="pop-producers">
-      <div class="pop-title-row">
+      <div>
         <h2 class="pop-producers-title">Популярные производители:</h2>
-        <a class="pop-producers-link" href="#">Все производители</a>
+        <a class="button pop-producers-link" href="#">Все производители</a>
       </div>
       <ul class="producers-list">
         <li class="producer-item">
@@ -165,8 +168,8 @@
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
       <ul class="features-list">
-        <li class="feature-item">
-          <a class="feature-link" href="#">Доставка</a>
+        <li class="feature-delivery">
+          <a class="feature-link feature-link-delivery" href="#">Доставка</a>
         </li>
         <li class="feature-item">
           <a a class="feature-link" href="#">Гарантия</a>
@@ -175,18 +178,18 @@
           <a a class="feature-link" href="#">Кредит</a>
         </li>
       </ul>
-    </section>
-    <section class="delivery">
-      <h2 class="delivery-title">Доставка</h2>
-      <p class="delivery-text">
-        Мы с удовольствием доставим ваш товар прямо<br>
-        к вашему подъезду совершенно бесплатно!
-      </p>
-      <p class="delivery-text">
-        Ведь мы неплохо заработаем,<br>
-        поднимая его на ваш этаж!
-      </p>
-      <img class="delivery-img" src="https://via.placeholder.com/150x100" alt="Доставка">
+      <div class="delivery">
+        <h2 class="delivery-title">Доставка</h2>
+        <p class="delivery-text">
+          Мы с удовольствием доставим ваш товар прямо<br>
+          к вашему подъезду совершенно бесплатно!
+        </p>
+        <p class="delivery-text">
+          Ведь мы неплохо заработаем,<br>
+          поднимая его на ваш этаж!
+        </p>
+        <img class="delivery-img" src="https://via.placeholder.com/150x100" alt="Доставка">
+      </div>
     </section>
 
     <section class="about-company">
@@ -260,32 +263,34 @@
         </li>
       </ul>
     </div>
-    <p class="copyright-text">
-      © 2010–2019 Компания «Техномарт»<br>
-      Все права защищены
-    </p>
-    <section class="socials">
-      <h2 class="visually-hidden">Соцсети</h2>
-      <ul class="socials-list">
-        <li class="social-item">
-          <a class="social-link" href="#">Вконтакте</a>
-        </li>
-        <li class="social-item">
-          <a class="social-link" href="#">Facebook</a>
-        </li>
-        <li class="social-item">
-          <a class="social-link" href="#">Instagram</a>
-        </li>
-      </ul>
+    <section class="footer-bot">
+      <p class="copyright-text">
+        © 2010–2019 Компания «Техномарт»<br>
+        Все права защищены
+      </p>
+      <div class="socials">
+        <h2 class="visually-hidden">Соцсети</h2>
+        <ul class="socials-list">
+          <li class="social-item">
+            <a class="social-link" href="#">Вконтакте</a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#">Facebook</a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer-email">
+        Обратная связь:<br>
+        <a class="footer-email-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </p>
+      <p class="footer-academy">
+        Разработано —<br>
+        <a class="academy-link" href="https://htmlacademy.ru/">htmlacademy.ru</a>
+      </p>
     </section>
-    <p class="footer-email">
-      Обратная связь:<br>
-      <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-    </p>
-    <p class="footer-academy">
-      Разработано —<br>
-      <a class="academy-link" href="https://htmlacademy.ru/">htmlacademy.ru</a>
-    </p>
   </footer>
 </body>
 
