@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=PT+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/normilize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,10 +13,18 @@
 <body>
   <header class="page-header">
     <div class="page-header-top">
-      <img class="page-header-logo" src="https://via.placeholder.com/150x100" alt="логотип мазагазина Техномарт">
-      <input class="page-header-search" type="search" name="search" placeholder="Поиск">
-      <a class="bookmarks-link" href="#">Закладки:</a>
-      <a class="cart-link" href="#">Корзина:</a>
+      <img class="header-logo-bg" src="../1418427-technomart-29/img/head_logo_layer.svg" alt="">
+      <img class="header-logo-text" src="../1418427-technomart-29/img/logo_text.svg" alt="">
+      <img class="search-icon" src="../1418427-technomart-29/img/search_icon.svg" alt="">
+      <input class="page-header-search" type="search" name="search" placeholder="Поиск:" value="Поиск:">
+      <a class="bookmarks-link" href="#">
+        <img class="bookmark-icon" src="..//1418427-technomart-29/img/book_icon.svg" alt="">
+        Закладки:
+      </a>
+      <a class="cart-link cart-added" href="#">
+        <img class="cart-icon" src="..//1418427-technomart-29/img/cart_icon.svg" alt="">
+        Корзина:
+      </a>
       <a class="checkout-link" href="#">Оформить заказ</a>
     </div>
     <p class="description-text">
@@ -22,12 +32,22 @@
       строительных материалов <br>
       и инструментов для ремонта
     </p>
-    <a class="header-phone-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
-    <p class="header-address-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-    <aside class="user-nav">
+    <div class="header-phone">
+      <a class="header-phone-link" href="tel:+78125550555">
+        <img class="phone-icon" src="..//1418427-technomart-29/img/phone_icon.svg" alt="">
+        <h4>+7 (812) 555-05-55</h4>
+      </a>
+    </div>
+    <p class="header-address-caption">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+    <aside class="user-nav-logged">
       <h2 class="visually-hidden">Личный кабинет</h2>
-      <a class="personal-info-link" href="#">Равшан Джамшутович</a><br>
+      <a class="name-link" href="#">
+        <img class="user-icon" src="../1418427-technomart-29/img/user_icon.svg" alt="">
+        Равшан Джамшутович
+        <img class="logout-icon" src="../1418427-technomart-29/img/logout_icon.svg" alt="">
+      </a><br>
       <a class="orders-link" href="#">Мои заказы</a>
+      <img class="decoration-dote" src="../1418427-technomart-29/img/dec-dote.svg" alt="">
       <a class="account-link" href="#">Личный кабинет</a>
     </aside>
     <nav class="site-nav">
@@ -57,112 +77,115 @@
     </nav>
   </header>
 
-  <main class="container">
-    <h2 class="container-title">Перфораторы</h2>
+  <main class="catalog-container">
     <ul class="breadcrumbs-list">
       <li class="breadcrumbs-item">
         <a href="index.html">
-          <img src="https://via.placeholder.com/150x100" alt="">
+          <img src="../1418427-technomart-29/img/home_icon.svg" alt="">
         </a>
       </li>
       <li class="breadcrumbs-item">
+        <img src="../1418427-technomart-29/img/right_icon_small.svg" alt="">
         <a>Каталог</a>
       </li>
       <li class="breadcrumbs-item">
+        <img src="../1418427-technomart-29/img/right_icon_small.svg" alt="">
         <a href="#">Инструмент</a>
       </li>
       <li class="breadcrumbs-item">
-        Перфораторы
+        <img src="../1418427-technomart-29/img/right_icon_small.svg" alt="">
+        <a>Перфораторы</a>
       </li>
     </ul>
+    <h2 class="catalog-container-title">Перфораторы</h2>
     <section class="filter">
-      <h2 class="filter-title">Фильтр</h2>
+      <p class="filter-title">Фильтр:</p>
       <!--Здесь будет форма фильтра-->
     </section>
-    <section>
-      <h2 class="category-title">Сортировка</h2>
+    <section class="item-categories">
+      <p class="category-title">Сортировка:</p>
       <ul class="category-list">
         <li class="category-item">По цене</li>
         <li class="category-item">По типу</li>
         <li class="category-item">По фунционалу</li>
       </ul>
     </section>
-    <section class="products-list">
+    <section class="catalog-products-list">
       <h2 class="visually-hidden">Список товаров</h2>
       <article class="product-item">
         <a class="product-link" href="#">
-          <img src="https://via.placeholder.com/150x100" alt="">
-          <p>Перфоратор BOSCH BFG 6000</p>
+          <img src="../1418427-technomart-29/img/BFG_6000.png" alt="">
+          <p class="product-name">Перфоратор BOSCH BFG 6000</p>
         </a>
         <p class="old-price">30500 Р.</p>
-        <button type="button" name="buy">25500 Р.</button>
+        <button class="button buy-item" type="button" name="buy">25500 Р.</button>
       </article>
       <article class="product-item">
         <a class="product-link" href="#">
-          <img src="https://via.placeholder.com/150x100" alt="">
-          <p>Перфоратор BOSCH BFG 6000</p>
+          <img src="../1418427-technomart-29/img/BFG_6000.png" alt="">
+          <p class="product-name">Перфоратор BOSCH BFG 6000</p>
         </a>
         <p class="old-price">30500 Р.</p>
-        <button type="button" name="buy">25500 Р.</button>
+        <button class="button buy-item" type="button" name="buy">25500 Р.</button>
       </article>
       <article class="product-item">
-        <button type="button" name="buy">КУПИТЬ</button>
-        <button type="button" name="addtobookmarks">В ЗАКЛАДКИ</button>
-        <a class="product-link" href="#">
-          Перфоратор BOSCH BFG 6000
-        </a>
+        <button class="add-cart" type="button" name="buy">
+          <img src="..//1418427-technomart-29/img/cart_icon.svg" alt=""> КУПИТЬ
+        </button>
+        <button class="add-bookmark" type="button" name="addtobookmarks">В Закладки</button>
+        <p class="product-name"> Перфоратор BOSCH BFG 6000</p>
         <p class="old-price">30500 Р.</p>
-        <button type="button" name="buy">25500 Р.</button>
+        <button class="button buy-item" type="button" name="buy">25500 Р.</button>
       </article>
       <article class="product-item">
         <a class="product-link" href="#">
-          <img src="https://via.placeholder.com/150x100" alt="">
-          <p>Перфоратор BOSCH BFG 3000</p>
+          <img src="../1418427-technomart-29/img/BFG_3000.png" alt="">
+          <p class="product-name">Перфоратор BOSCH BFG 3000</p>
         </a>
         <p class="old-price">22500 Р.</p>
-        <button type="button" name="buy">15500 Р.</button>
+        <button class="button buy-item" type="button" name="buy">15500 Р.</button>
       </article>
       <article class="product-item">
         <a class="product-link" href="#">
-          <img src="https://via.placeholder.com/150x100" alt="">
-          <p>Перфоратор BOSCH BFG 6000</p>
+          <img src="../1418427-technomart-29/img/BFG_6000.png" alt="">
+          <p class="product-name">Перфоратор BOSCH BFG 6000</p>
         </a>
         <p class="old price">30500 Р.</p>
-        <button type="button" name="buy">25500 Р.</button>
+        <button class="button buy-item" type="button" name="buy">25500 Р.</button>
       </article>
       <article class="product-item">
         <a class="product-link" href="#">
-          <img src="https://via.placeholder.com/150x100" alt="">
-          <p>Перфоратор BOSCH BFG 2000</p>
+          <img src="../1418427-technomart-29/img/BFG_2000.png" alt="">
+          <p class="product-name">Перфоратор BOSCH BFG 2000</p>
         </a>
-        <button type="button" name="buy">12500 Р.</button>
+        <button class="button buy-item" type="button" name="buy">12500 Р.</button>
       </article>
       <article class="product-item">
         <a class="product-link" href="#">
-          <img src="https://via.placeholder.com/150x100" alt="">
-          <p>Перфоратор BOSCH BFG 3000</p>
+          <img src="..//1418427-technomart-29/img/BFG_3000.png" alt="">
+          <p class="product-name">Перфоратор BOSCH BFG 3000</p>
         </a>
         <p class="old-price">22500 Р.</p>
-        <button type="button" name="buy">15500 Р.</button>
+        <button class="button buy-item" type="button" name="buy">15500 Р.</button>
       </article>
       <article class="product-item">
         <a class="product-link" href="#">
-          <img src="https://via.placeholder.com/150x100" alt="">
-          <p>Перфоратор BOSCH BFG 6000</p>
+          <img src="..//1418427-technomart-29/img/BFG_6000.png" alt="">
+          <p class="product-name">Перфоратор BOSCH BFG 6000</p>
         </a>
         <p class="old-price">30500 Р.</p>
-        <button type="button" name="buy">25500 Р.</button>
+        <button class="button buy-item" type="button" name="buy">25500 Р.</button>
       </article>
       <article class="product-item">
         <a class="product-link" href="#">
-          <img src="https://via.placeholder.com/150x100" alt="">
-          <p>Перфоратор BOSCH BFG 2000</p>
+          <img src="..//1418427-technomart-29/img/BFG_2000.png" alt="">
+          <p class="product-name">Перфоратор BOSCH BFG 2000</p>
         </a>
-        <button type="button" name="buy">12500 Р.</button>
+        <button class="button buy-item" type="button" name="buy">12500 Р.</button>
       </article>
       <ul class="pagination-list">
         <li class="pagination-item--current">
-          <a class="pagination-link">1</a>
+          <a class="pagination-link-active">1</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">2</a>
@@ -194,9 +217,12 @@
 
   <footer class="footer">
     <h2 class="visually-hidden">Как нас найти?</h2>
-    <img class="footer-logo" src="https://via.placeholder.com/150x100" alt="логотип мазагазина ТЕХНОМАРТ">
-    <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-    <p class="footer-phone">+7 (812) 555-05-55</p>
+    <img class="footer-logo" src="../1418427-technomart-29/img/foot_logo_layer.svg" alt="">
+    <img src="../1418427-technomart-29/img/logo_text.svg" alt="">
+    <div class="footer-contacts">
+      <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <p class="footer-phone">+7 (812) 555-05-55</p>
+    </div>
     <div class="nav-footer">
       <ul class="nav-footer-list">
         <li class="nav-footer-item">
@@ -232,32 +258,40 @@
         </li>
       </ul>
     </div>
-    <p class="copyright-text">
-      © 2010–2019 Компания «Техномарт»<br>
-      Все права защищены
-    </p>
-    <section class="socials">
-      <h2 class="visually-hidden">Соцсети</h2>
-      <ul class="socials-list">
-        <li class="social-item">
-          <a class="social-link" href="#">Вконтакте</a>
-        </li>
-        <li class="social-item">
-          <a class="social-link" href="#">Facebook</a>
-        </li>
-        <li class="social-item">
-          <a class="social-link" href="#">Instagram</a>
-        </li>
-      </ul>
+    <section class="footer-bot">
+      <p class="copyright-text">
+        © 2010–2019 Компания «Техномарт»<br>
+        Все права защищены
+      </p>
+      <div class="socials">
+        <h2 class="visually-hidden">Соцсети</h2>
+        <ul class="socials-list">
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <img src="../1418427-technomart-29/img/VK.png" alt="Вконтакте">
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <img src="../1418427-technomart-29/img/facebook.png" alt="Facebook">
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <img src="../1418427-technomart-29/img/instagram.png" alt="Instagram">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer-email">
+        Обратная связь:<br>
+        <a class="footer-email-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </p>
+      <p class="footer-academy">
+        Разработано —<br>
+        <a class="academy-link" href="https://htmlacademy.ru/">htmlacademy.ru</a>
+      </p>
     </section>
-    <p class="footer-email">
-      Обратная связь:<br>
-      <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-    </p>
-    <p class="footer-academy">
-      Разработано —<br>
-      <a class="academy-link" href="https://htmlacademy.ru/">htmlacademy.ru</a>
-    </p>
   </footer>
 </body>
 
