@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -10,19 +10,20 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-body">
   <header class="page-header">
     <div class="page-header-top">
-      <img class="header-logo-bg" src="../1418427-technomart-29/img/head_logo_layer.svg" alt="">
-      <img class="header-logo-text" src="../1418427-technomart-29/img/logo_text.svg" alt="">
-      <img class="search-icon" src="../1418427-technomart-29/img/search_icon.svg" alt="">
+      <span class="header-logo">
+        <img src="../1418427-technomart-29/img/logo_text.svg" width="106" height="16" alt="">
+      </span>
+      <img class="search-icon" src="../1418427-technomart-29/img/search_icon.svg" width="17" height="17" alt="">
       <input class="page-header-search" type="search" name="search" placeholder="Поиск:" value="Поиск:">
       <a class="bookmarks-link" href="#">
-        <img class="bookmark-icon" src="..//1418427-technomart-29/img/book_icon.svg" alt="">
+        <img class="bookmark-icon" src="..//1418427-technomart-29/img/book_icon.svg" width="14" height="16" alt="">
         Закладки:
       </a>
-      <a class="cart-link cart-added" href="#">
-        <img class="cart-icon" src="..//1418427-technomart-29/img/cart_icon.svg" alt="">
+      <a class="cart-link" href="#">
+        <img class="cart-icon" src="..//1418427-technomart-29/img/cart_icon.svg" width="15" height="15" alt="">
         Корзина:
       </a>
       <a class="checkout-link" href="#">Оформить заказ</a>
@@ -34,7 +35,7 @@
     </p>
     <div class="header-phone">
       <a class="header-phone-link" href="tel:+78125550555">
-        <img class="phone-icon" src="..//1418427-technomart-29/img/phone_icon.svg" alt="">
+        <img class="phone-icon" src="..//1418427-technomart-29/img/phone_icon.svg" width="19" height="19" alt="">
         <h4>+7 (812) 555-05-55</h4>
       </a>
     </div>
@@ -42,7 +43,7 @@
     <aside class="user-nav">
       <h2 class="visually-hidden">Личный кабинет</h2>
       <a class="login-link" href="#">
-        <img class="login-icon" src="..//1418427-technomart-29/img/login_icon.svg" alt="">Войти
+        <img class="login-icon" src="..//1418427-technomart-29/img/login_icon.svg" width="20" height="17" alt="">Войти
       </a>
       <a class="reg-link" href="#">Регистрация</a>
     </aside>
@@ -77,105 +78,123 @@
     <section class="services">
       <h2 class="visually-hidden">Услуги</h2>
       <ul class="services-list">
-        <li class="service-materials">
+        <li class="service-card service-materials">
           <h3 class="service-materials-caption">Материалы</h3>
-          <a class="service-link" href="#">На любой вкус </a>
-          <img class="materials-icon" src="../1418427-technomart-29/img/materials_icon.svg" alt="">
+          <div class="service-link">
+            <a class="service-link-text" href="#">На любой вкус </a>
+          </div>
+          <img class="materials-icon" src="../1418427-technomart-29/img/materials_icon.svg" width="44" height="65"
+            alt="">
         </li>
-        <li class="service-tools">
+        <li class="service-card service-tools">
           <h3 class="service-tools-caption">Инструмент</h3>
-          <a class="service-link" href="#"> На все случаи </a>
-          <img class="tools-icon" src="../1418427-technomart-29/img/tools_icon.svg" alt="">
+          <div class="service-link">
+            <a class="service-link-text" href="#"> На все случаи </a>
+          </div>
+          <img class="tools-icon" src="../1418427-technomart-29/img/tools_icon.svg" width="75" height="61" alt="">
         </li>
-        <li class="service-techs">
+        <li class="service-card service-techs">
           <h3 class="service-tech-caption">Техника</h3>
-          <a class="service-link" href="#"> Для стройки </a>
-          <img class="techs-icon" src="../1418427-technomart-29/img/techs_icon.svg" alt="">
+          <div class="service-link">
+            <a class="service-link-text" href="#"> Для стройки </a>
+          </div>
+          <img class="techs-icon" src="../1418427-technomart-29/img/techs_icon.svg" width="78" height="62" alt="">
         </li>
         <li class="service-gallery">
           <h3 class="service-products-caption">Перфораторы</h3>
           <p class="catalog-text">Настоящие мужские игрушки</p>
-          <a class="button catalog-link" href="catalog.html">Открыть каталог</a>
-          <button class="gallery-button-back">Назад</button>
-          <button class="gallery-button-next">Вперед</button>
+          <button class="gallery-button">
+            <img src="../1418427-technomart-29/img/previuos_img.svg" width="22" height="40" alt="">
+          </button>
+          <button class="gallery-button">
+            <img src="../1418427-technomart-29/img/next_img.svg" width="22" height="40" alt="">
+          </button>
+          <div class="button-link catalog-button">
+            <a class="catalog-link" href="catalog.html">Открыть каталог</a>
+          </div>
         </li>
-        <li class="service-discounts">
+        <li class="service-card service-discounts">
           <h3 class="service-discount-caption">Скидки 50%</h3>
-          <a class="service-link" href="#"> На 350 товаров </a>
-          <img class="discounts-icon" src="../1418427-technomart-29/img/discounts_icon.svg" alt="">
+          <div class="service-link">
+            <a class="service-link-text" href="#"> На 350 товаров </a>
+          </div>
+          <img class="discounts-icon" src="../1418427-technomart-29/img/discounts_icon.svg" width="59" height="72"
+            alt="">
         </li>
-        <li class="service-delivery">
+        <li class="service-card service-delivery">
           <h3 class="service-delivery-caption">Доставка</h3>
-          <a class="service-link" href=" #"> Бесплатно </a>
-          <img class="delivery-icon" src="../1418427-technomart-29/img/delivery_icon.svg" alt="">
+          <div class="service-link">
+            <a class="service-link-text" href=" #"> Бесплатно </a>
+          </div>
+          <img class="delivery-icon" src="../1418427-technomart-29/img/delivery_icon.svg" width="78" height="63" alt="">
         </li>
       </ul>
     </section>
 
     <section class="pop-products">
-      <div>
-        <h2 class="pop-products-title">Популярные товары:</h2>
-        <a class="button pop-products-link" href="#">Все популярные товары</a>
+      <div class="products-title">
+        <h2 class="products-title-text">Популярные товары:</h2>
+        <a class="button-link pop-products-link" href="#">Все популярные товары</a>
       </div>
       <article class="pop-item">
         <a class="pop-item-link" href="#">
-          <img src="../1418427-technomart-29/img/BFG_9000.png" alt="">
+          <img class="pop-item-img" src="../1418427-technomart-29/img/BFG_9000.png" width="184" height="164" alt="">
           <p class="pop-name">Перфоратор BOSCH BFG 9000</p>
         </a>
         <p class="old-price">32500 Р.</p>
-        <button class="button buy-item" type="button" name="buy">25500 Р.</button>
+        <button class="buy-item" type="button" name="buy">25500 Р.</button>
       </article>
       <article class="pop-item">
         <a class="pop-item-link" href="#">
-          <img src="../1418427-technomart-29/img/BFG_3000.png" alt=""><br>
+          <img src="../1418427-technomart-29/img/BFG_3000.png" width="127" height="112" alt=""><br>
           <p class="pop-name">Перфоратор BOSCH BFG 3000</p>
         </a>
         <p class="old-price">22500 Р.</p>
-        <button class="button buy-item" type="button" name="buy">15500 Р.</button>
+        <button class="buy-item" type="button" name="buy">15500 Р.</button>
       </article>
       <article class="pop-item">
         <a class="pop-item-link" href="#">
-          <img src="../1418427-technomart-29/img/BFG_6000.png" alt=""><br>
+          <img src="../1418427-technomart-29/img/BFG_6000.png" width="144" height="128" alt=""><br>
           <p class="pop-name">Перфоратор BOSCH BFG 6000</p>
         </a>
         <p class="old-price">30500 Р.</p>
-        <button class="button buy-item" type="button" name="buy">25500 Р.</button>
+        <button class="buy-item" type="button" name="buy">25500 Р.</button>
       </article>
       <article class="pop-item">
         <a class="pop-item-link" href="#">
-          <img src="../1418427-technomart-29/img/BFG_2000.png" alt=""><br>
+          <img src="../1418427-technomart-29/img/BFG_2000.png" width="127" height="112" alt=""><br>
           <p class="pop-name">Перфоратор BOSCH BFG 2000</p>
         </a>
-        <button class="button buy-item" type="button" name="buy">12500 Р.</button>
+        <button class="buy-item" type="button" name="buy">12500 Р.</button>
       </article>
     </section>
 
     <section class="pop-producers">
       <div class="pop-producers-title">
         <h2>Популярные производители:</h2>
-        <a class="button pop-producers-link" href="#">Все производители</a>
+        <a class="button-link pop-producers-link" href="#">Все производители</a>
       </div>
       <ul class="producers-list">
         <li class="producer-item">
-          <img src="../1418427-technomart-29/img/bosch_logo.png" alt="BOSCH">
+          <img src="../1418427-technomart-29/img/bosch_logo.png" width="220" height="145" alt="BOSCH">
         </li>
         <li class="producer-item">
-          <img src="../1418427-technomart-29/img/makita_logo.png" alt="MAKITA">
+          <img src="../1418427-technomart-29/img/makita_logo.png" width="220" height="145" alt="MAKITA">
         </li>
         <li class="producer-item">
-          <img src="../1418427-technomart-29/img/dewalt_logo.png" alt="DEWALT">
+          <img src="../1418427-technomart-29/img/dewalt_logo.png" width="220" height="145" alt="DEWALT">
         </li>
         <li class="producer-item">
-          <img src="../1418427-technomart-29/img/inter_logo.png" alt="Интерскол">
+          <img src="../1418427-technomart-29/img/inter_logo.png" width="220" height="145" alt="Интерскол">
         </li>
         <li class="producer-item">
-          <img src="../1418427-technomart-29/img/hitachi_logo.png" alt="HITACHI">
+          <img src="../1418427-technomart-29/img/hitachi_logo.png" width="220" height="145" alt="HITACHI">
         </li>
         <li class="producer-item">
-          <img src="../1418427-technomart-29/img/AEG_logo.png" alt="AEG">
+          <img src="../1418427-technomart-29/img/AEG_logo.png" width="220" height="145" alt="AEG">
         </li>
         <li class="producer-item">
-          <img src="../1418427-technomart-29/img/metabo_logo.png" alt="METABO">
+          <img src="../1418427-technomart-29/img/metabo_logo.png" width="220" height="145" alt="METABO">
         </li>
       </ul>
     </section>
@@ -207,7 +226,8 @@
           Ведь мы неплохо заработаем,<br>
           поднимая его на ваш этаж!
         </p>
-        <img class="delivery-img" src="../1418427-technomart-29/img/delivery_background.png" alt="Доставка">
+        <img class="delivery-img" src="../1418427-technomart-29/img/delivery_background.png" width="468" height="261"
+          alt="Доставка">
       </div>
     </section>
 
@@ -227,7 +247,7 @@
         <li class="company-item">Автотрейдинг</li>
         <li class="company-item">ЖелДорЭкспедиция</li>
       </ul>
-      <a class="button about-company-link" href="#">Подробнее о компании</a>
+      <a class="button-link about-company-link" href="#">Подробнее о компании</a>
     </section>
 
     <section class="modal modal-map">
@@ -237,16 +257,17 @@
         заехав в наш офис:
       </p>
       <!--Здесь будет карта-->
-      <img src="../1418427-technomart-29/img/map.png" alt="">
+      <img src="../1418427-technomart-29/img/map.png" width="300" height="158" alt="">
       <button class="modal-close">Закрыть</button>
-      <button class="button contact-us" type="button">Заблудились? Напишите нам!</button>
+      <button class="button-link contact-us" type="button">Заблудились? Напишите нам!</button>
     </section>
   </main>
 
   <footer class="footer">
     <h2 class="visually-hidden">Как нас найти?</h2>
-    <img class="footer-logo" src="../1418427-technomart-29/img/foot_logo_layer.svg" alt="">
-    <img src="../1418427-technomart-29/img/logo_text.svg" alt="">
+    <div class="footer-logo">
+      <img src="../1418427-technomart-29/img/logo_text.svg" width="136" height="21" alt="">
+    </div>
     <div class="footer-contacts">
       <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       <p class="footer-phone">+7 (812) 555-05-55</p>
@@ -296,17 +317,17 @@
         <ul class="socials-list">
           <li class="social-item">
             <a class="social-link" href="#">
-              <img src="../1418427-technomart-29/img/VK.png" alt="Вконтакте">
+              <img src="../1418427-technomart-29/img/VK.png" width="44" height="44" alt="Вконтакте">
             </a>
           </li>
           <li class="social-item">
             <a class="social-link" href="#">
-              <img src="../1418427-technomart-29/img/facebook.png" alt="Facebook">
+              <img src="../1418427-technomart-29/img/facebook.png" width="44" height="44" alt="Facebook">
             </a>
           </li>
           <li class="social-item">
             <a class="social-link" href="#">
-              <img src="../1418427-technomart-29/img/instagram.png" alt="Instagram">
+              <img src="../1418427-technomart-29/img/instagram.png" width="44" height="44" alt="Instagram">
             </a>
           </li>
         </ul>
