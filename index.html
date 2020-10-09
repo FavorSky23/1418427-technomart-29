@@ -13,40 +13,48 @@
 <body class="page-body">
   <header class="page-header">
     <div class="page-header-top">
-      <span class="header-logo">
-        <img src="../1418427-technomart-29/img/logo_text.svg" width="106" height="16" alt="">
-      </span>
-      <img class="search-icon" src="../1418427-technomart-29/img/search_icon.svg" width="17" height="17" alt="">
-      <input class="page-header-search" type="search" name="search" placeholder="Поиск:" value="Поиск:">
-      <a class="bookmarks-link" href="#">
-        <img class="bookmark-icon" src="..//1418427-technomart-29/img/book_icon.svg" width="14" height="16" alt="">
-        Закладки:
-      </a>
-      <a class="cart-link" href="#">
-        <img class="cart-icon" src="..//1418427-technomart-29/img/cart_icon.svg" width="15" height="15" alt="">
-        Корзина:
-      </a>
-      <a class="checkout-link" href="#">Оформить заказ</a>
+      <div class="header-top-wrapper">
+        <span class="header-logo">
+          <img class="logo" src="../1418427-technomart-29/img/logo_text.svg" width="106" height="16" alt="">
+        </span>
+        <img class="search-icon" src="../1418427-technomart-29/img/search_icon.svg" width="17" height="17" alt="">
+        <input class="page-header-search" type="search" name="search" placeholder="Поиск:" value="Поиск:">
+        <a class="bookmarks-link" href="#">
+          <img class="bookmark-icon" src="..//1418427-technomart-29/img/book_icon.svg" width="14" height="16" alt="">
+          Закладки: 0
+        </a>
+        <a class="cart-link" href="#">
+          <img class="cart-icon" src="..//1418427-technomart-29/img/cart_icon.svg" width="15" height="15" alt="">
+          Корзина: 0
+        </a>
+        <a class="checkout-link" href="#">
+          <p>Оформить заказ</p>
+        </a>
+      </div>
     </div>
-    <p class="description-text">
-      Интернет-магазин <br>
-      строительных материалов <br>
-      и инструментов для ремонта
-    </p>
-    <div class="header-phone">
-      <a class="header-phone-link" href="tel:+78125550555">
-        <img class="phone-icon" src="..//1418427-technomart-29/img/phone_icon.svg" width="19" height="19" alt="">
-        <h4>+7 (812) 555-05-55</h4>
-      </a>
+    <div class="header-mid-wrapper">
+      <p class="description-text">
+        Интернет-магазин <br>
+        строительных материалов <br>
+        и инструментов для ремонта
+      </p>
+      <section class="header-contacts">
+        <div class="header-phone">
+          <a class="header-phone-link" href="tel:+78125550555">
+            <img class="phone-icon" src="..//1418427-technomart-29/img/phone_icon.svg" width="19" height="19" alt="">
+            <h4>+7 (812) 555-05-55</h4>
+          </a>
+        </div>
+        <p class="header-address-caption">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      </section>
+      <aside class="user-nav">
+        <h2 class="visually-hidden">Личный кабинет</h2>
+        <a class="login-link" href="#">
+          <img class="login-icon" src="..//1418427-technomart-29/img/login_icon.svg" width="20" height="17" alt="">Войти
+        </a>
+        <a class="reg-link" href="#">Регистрация</a>
+      </aside>
     </div>
-    <p class="header-address-caption">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-    <aside class="user-nav">
-      <h2 class="visually-hidden">Личный кабинет</h2>
-      <a class="login-link" href="#">
-        <img class="login-icon" src="..//1418427-technomart-29/img/login_icon.svg" width="20" height="17" alt="">Войти
-      </a>
-      <a class="reg-link" href="#">Регистрация</a>
-    </aside>
     <nav class="site-nav">
       <ul class="nav-list">
         <li class="nav-item--current">
@@ -62,7 +70,7 @@
           <a class="nav-link" href="#">Новости</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Специальные предложения</a>
+          <a class="nav-link" href="#">Спецпредложения</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Доставка</a>
@@ -80,22 +88,23 @@
       <ul class="services-list">
         <li class="service-card service-materials">
           <h3 class="service-materials-caption">Материалы</h3>
-          <div class="service-link">
+          <div class="service-link materials-link">
             <a class="service-link-text" href="#">На любой вкус </a>
           </div>
           <img class="materials-icon" src="../1418427-technomart-29/img/materials_icon.svg" width="44" height="65"
             alt="">
+          <img class="materials-new" src="../1418427-technomart-29/img/catalog_new.svg" width="70" height="70" alt="">
         </li>
         <li class="service-card service-tools">
           <h3 class="service-tools-caption">Инструмент</h3>
-          <div class="service-link">
+          <div class="service-link tools-link">
             <a class="service-link-text" href="#"> На все случаи </a>
           </div>
           <img class="tools-icon" src="../1418427-technomart-29/img/tools_icon.svg" width="75" height="61" alt="">
         </li>
         <li class="service-card service-techs">
-          <h3 class="service-tech-caption">Техника</h3>
-          <div class="service-link">
+          <h3 class="service-techs-caption">Техника</h3>
+          <div class="service-link techs-link">
             <a class="service-link-text" href="#"> Для стройки </a>
           </div>
           <img class="techs-icon" src="../1418427-technomart-29/img/techs_icon.svg" width="78" height="62" alt="">
@@ -103,10 +112,10 @@
         <li class="service-gallery">
           <h3 class="service-products-caption">Перфораторы</h3>
           <p class="catalog-text">Настоящие мужские игрушки</p>
-          <button class="gallery-button">
+          <button class="gallery-button-back">
             <img src="../1418427-technomart-29/img/previuos_img.svg" width="22" height="40" alt="">
           </button>
-          <button class="gallery-button">
+          <button class="gallery-button-next">
             <img src="../1418427-technomart-29/img/next_img.svg" width="22" height="40" alt="">
           </button>
           <div class="button-link catalog-button">
@@ -114,8 +123,8 @@
           </div>
         </li>
         <li class="service-card service-discounts">
-          <h3 class="service-discount-caption">Скидки 50%</h3>
-          <div class="service-link">
+          <h3 class="service-discounts-caption">Скидки 50%</h3>
+          <div class="service-link discounts-link">
             <a class="service-link-text" href="#"> На 350 товаров </a>
           </div>
           <img class="discounts-icon" src="../1418427-technomart-29/img/discounts_icon.svg" width="59" height="72"
@@ -123,7 +132,7 @@
         </li>
         <li class="service-card service-delivery">
           <h3 class="service-delivery-caption">Доставка</h3>
-          <div class="service-link">
+          <div class="service-link delivery-link">
             <a class="service-link-text" href=" #"> Бесплатно </a>
           </div>
           <img class="delivery-icon" src="../1418427-technomart-29/img/delivery_icon.svg" width="78" height="63" alt="">
@@ -265,9 +274,7 @@
 
   <footer class="footer">
     <h2 class="visually-hidden">Как нас найти?</h2>
-    <div class="footer-logo">
-      <img src="../1418427-technomart-29/img/logo_text.svg" width="136" height="21" alt="">
-    </div>
+    <img src="../1418427-technomart-29/img/logo.svg" width="220" height="68" alt="">
     <div class="footer-contacts">
       <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       <p class="footer-phone">+7 (812) 555-05-55</p>
