@@ -41,18 +41,25 @@
       <section class="header-contacts">
         <div class="header-phone">
           <a class="header-phone-link" href="tel:+78125550555">
-            <img class="phone-icon" src="..//1418427-technomart-29/img/phone_icon.svg" width="19" height="19" alt="">
-            <h4>+7 (812) 555-05-55</h4>
+            <h4>
+              <img class="phone-icon" src="..//1418427-technomart-29/img/phone_icon.svg" width="19" height="19"
+                alt="">+7 (812) 555-05-55
+            </h4>
           </a>
         </div>
         <p class="header-address-caption">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </section>
       <aside class="user-nav">
         <h2 class="visually-hidden">Личный кабинет</h2>
-        <a class="login-link" href="#">
-          <img class="login-icon" src="..//1418427-technomart-29/img/login_icon.svg" width="20" height="17" alt="">Войти
-        </a>
-        <a class="reg-link" href="#">Регистрация</a>
+        <div class="login">
+          <a class="login-link" href="#">
+            <img class="login-icon" src="..//1418427-technomart-29/img/login_icon.svg" width="20" height="17"
+              alt="">Войти
+          </a>
+        </div>
+        <div class="reg">
+          <a class="reg-link" href="#">Регистрация</a>
+        </div>
       </aside>
     </div>
     <nav class="site-nav">
@@ -145,37 +152,39 @@
         <h2 class="products-title-text">Популярные товары:</h2>
         <a class="button-link pop-products-link" href="#">Все популярные товары</a>
       </div>
-      <article class="pop-item">
-        <a class="pop-item-link" href="#">
-          <img class="pop-item-img" src="../1418427-technomart-29/img/BFG_9000.png" width="184" height="164" alt="">
-          <p class="pop-name">Перфоратор BOSCH BFG 9000</p>
-        </a>
-        <p class="old-price">32500 Р.</p>
-        <button class="buy-item" type="button" name="buy">25500 Р.</button>
-      </article>
-      <article class="pop-item">
-        <a class="pop-item-link" href="#">
-          <img src="../1418427-technomart-29/img/BFG_3000.png" width="127" height="112" alt=""><br>
-          <p class="pop-name">Перфоратор BOSCH BFG 3000</p>
-        </a>
-        <p class="old-price">22500 Р.</p>
-        <button class="buy-item" type="button" name="buy">15500 Р.</button>
-      </article>
-      <article class="pop-item">
-        <a class="pop-item-link" href="#">
-          <img src="../1418427-technomart-29/img/BFG_6000.png" width="144" height="128" alt=""><br>
-          <p class="pop-name">Перфоратор BOSCH BFG 6000</p>
-        </a>
-        <p class="old-price">30500 Р.</p>
-        <button class="buy-item" type="button" name="buy">25500 Р.</button>
-      </article>
-      <article class="pop-item">
-        <a class="pop-item-link" href="#">
-          <img src="../1418427-technomart-29/img/BFG_2000.png" width="127" height="112" alt=""><br>
-          <p class="pop-name">Перфоратор BOSCH BFG 2000</p>
-        </a>
-        <button class="buy-item" type="button" name="buy">12500 Р.</button>
-      </article>
+      <div class="pop-items-wrap">
+        <article class="pop-item">
+          <a class="pop-item-link" href="#">
+            <img class="pop-item-img" src="../1418427-technomart-29/img/BFG_9000.png" width="184" height="164" alt="">
+            <p class="pop-name">Перфоратор BOSCH BFG 9000</p>
+          </a>
+          <p class="old-price">32500 Р.</p>
+          <button class="buy-item" type="button" name="buy">25500 Р.</button>
+        </article>
+        <article class="pop-item">
+          <a class="pop-item-link" href="#">
+            <img src="../1418427-technomart-29/img/BFG_3000.png" width="127" height="112" alt=""><br>
+            <p class="pop-name">Перфоратор BOSCH BFG 3000</p>
+          </a>
+          <p class="old-price">22500 Р.</p>
+          <button class="buy-item" type="button" name="buy">15500 Р.</button>
+        </article>
+        <article class="pop-item">
+          <a class="pop-item-link" href="#">
+            <img src="../1418427-technomart-29/img/BFG_6000.png" width="144" height="128" alt=""><br>
+            <p class="pop-name">Перфоратор BOSCH BFG 6000</p>
+          </a>
+          <p class="old-price">30500 Р.</p>
+          <button class="buy-item" type="button" name="buy">25500 Р.</button>
+        </article>
+        <article class="pop-item">
+          <a class="pop-item-link" href="#">
+            <img src="../1418427-technomart-29/img/BFG_2000.png" width="127" height="112" alt=""><br>
+            <p class="pop-name">Перфоратор BOSCH BFG 2000</p>
+          </a>
+          <button class="buy-item" type="button" name="buy">12500 Р.</button>
+        </article>
+      </div>
     </section>
 
     <section class="pop-producers">
@@ -200,6 +209,9 @@
           <img src="../1418427-technomart-29/img/hitachi_logo.png" width="220" height="145" alt="HITACHI">
         </li>
         <li class="producer-item">
+          <img src="../1418427-technomart-29/img/LG_logo.png" width="220" height="145" alt="LG">
+        </li>
+        <li class="producer-item">
           <img src="../1418427-technomart-29/img/AEG_logo.png" width="220" height="145" alt="AEG">
         </li>
         <li class="producer-item">
@@ -214,139 +226,148 @@
         Хороший интернет-магазин отличается от плохого не только ценами!<br>
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
-      <ul class="features-list">
-        <li class="feature-delivery">
-          <a class="feature-link feature-link-delivery" href="#">Доставка</a>
-        </li>
-        <li class="feature-item">
-          <a class="feature-link" href="#">Гарантия</a>
-        </li>
-        <li class="feature-item">
-          <a class="feature-link" href="#">Кредит</a>
-        </li>
-      </ul>
-      <div class="delivery">
-        <h2 class="delivery-title">Доставка</h2>
-        <p class="delivery-text">
-          Мы с удовольствием доставим ваш товар прямо<br>
-          к вашему подъезду совершенно бесплатно!
-        </p>
-        <p class="delivery-text">
-          Ведь мы неплохо заработаем,<br>
-          поднимая его на ваш этаж!
-        </p>
-        <img class="delivery-img" src="../1418427-technomart-29/img/delivery_background.png" width="468" height="261"
-          alt="Доставка">
+      <div class="features-wrap">
+        <ul class="features-list">
+          <li class="feature-item feature-delivery">
+            <a class="feature-link feature-link-delivery" href="#">Доставка</a>
+          </li>
+          <li class="feature-item">
+            <a class="feature-link" href="#">Гарантия</a>
+          </li>
+          <li class="feature-item">
+            <a class="feature-link" href="#">Кредит</a>
+          </li>
+        </ul>
+        <div class="delivery">
+          <div>
+            <h2 class="delivery-title">Доставка</h2>
+            <p class="delivery-text">
+              Мы с удовольствием доставим ваш товар прямо<br>
+              к вашему подъезду совершенно бесплатно!
+            </p>
+            <p class="delivery-text">
+              Ведь мы неплохо заработаем,<br>
+              поднимая его на ваш этаж!
+            </p>
+          </div>
+          <img class="delivery-img" src="../1418427-technomart-29/img/delivery_background.png" width="468" height="261"
+            alt="Доставка">
+        </div>
       </div>
     </section>
 
     <section class="about-company">
-      <h2 class="company-title">Компания «Техномарт»</h2>
-      <p class="about-company-text">
-        Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
-        ремонта и строительства не оставит равнодушными любителей сэкономить на<br>
-        гастарбайтерах.
-      </p>
-      <p class="about-company-text">
-        Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-        Техномарт работает со многими транспортными компаниями:
-      </p>
-      <ul class="transportation-companies-list">
-        <li class="company-item">Деловые линии</li>
-        <li class="company-item">Автотрейдинг</li>
-        <li class="company-item">ЖелДорЭкспедиция</li>
-      </ul>
-      <a class="button-link about-company-link" href="#">Подробнее о компании</a>
-    </section>
-
-    <section class="modal modal-map">
-      <h2 class="map-title">Контакты</h2>
-      <p class="map-text">
-        Вы можете забрать товар сами,<br>
-        заехав в наш офис:
-      </p>
-      <!--Здесь будет карта-->
-      <img src="../1418427-technomart-29/img/map.png" width="300" height="158" alt="">
-      <button class="modal-close">Закрыть</button>
-      <button class="button-link contact-us" type="button">Заблудились? Напишите нам!</button>
+      <div class="about-company-wrap">
+        <h2 class="company-title">Компания «Техномарт»</h2>
+        <p class="about-company-text">
+          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
+          ремонта и строительства не оставит равнодушными любителей сэкономить на<br>
+          гастарбайтерах.
+        </p>
+        <p class="about-company-text">
+          Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+          Техномарт работает со многими транспортными компаниями:
+        </p>
+        <ul class="transportation-companies-list">
+          <li class="company-item">Деловые линии</li>
+          <li class="company-item">Автотрейдинг</li>
+          <li class="company-item">ЖелДорЭкспедиция</li>
+        </ul>
+        <a class="button-link about-company-link" href="#">Подробнее о компании</a>
+      </div>
+      <div class="modal modal-map">
+        <h2 class="map-title">Контакты</h2>
+        <p class="map-text">
+          Вы можете забрать товар сами,<br>
+          заехав в наш офис:
+        </p>
+        <!--Здесь будет карта-->
+        <img src="../1418427-technomart-29/img/map.png" width="300" height="158" alt="">
+        <button class="modal-close">Закрыть</button>
+        <button class="button-link contact-us" type="button">Заблудились? Напишите нам!</button>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
     <h2 class="visually-hidden">Как нас найти?</h2>
-    <img src="../1418427-technomart-29/img/logo.svg" width="220" height="68" alt="">
-    <div class="footer-contacts">
-      <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <p class="footer-phone">+7 (812) 555-05-55</p>
-    </div>
-    <div class="nav-footer">
-      <ul class="nav-footer-list">
-        <li class="nav-footer-item">
-          <a class="nav-footer-link" href="#">Компания</a>
-        </li>
-        <li class="nav-footer-item">
-          <a class="nav-footer-link" href="catalog.html">Каталог</a>
-        </li>
-        <li class="nav-footer-item">
-          <a class="nav-footer-link" href="#">Новости</a>
-        </li>
-        <li class="nav-footer-item">
-          <a class="nav-footer-link" href="#">Доставка</a>
-        </li>
-        <li class="nav-footer-item">
-          <a class="nav-footer-link" href="#">Контакты</a>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <ul class="footer-features-list">
-        <li class="footer-feature-item">
-          <a class="footer-feature-link" href="#">Материалы</a>
-        </li>
-        <li class="footer-feature-item">
-          <a class="footer-feature-link" href="#">Техника</a>
-        </li>
-        <li class="footer-feature-item">
-          <a class="footer-feature-link" href="#">Инструмент</a>
-        </li>
-        <li class="footer-feature-item">
-          <a class="footer-feature-link" href="#">Спецпредложения</a>
-        </li>
-      </ul>
-    </div>
-    <section class="footer-bot">
-      <p class="copyright-text">
-        © 2010–2019 Компания «Техномарт»<br>
-        Все права защищены
-      </p>
-      <div class="socials">
-        <h2 class="visually-hidden">Соцсети</h2>
-        <ul class="socials-list">
-          <li class="social-item">
-            <a class="social-link" href="#">
-              <img src="../1418427-technomart-29/img/VK.png" width="44" height="44" alt="Вконтакте">
-            </a>
+    <div class="footer-top-wrap">
+      <div class="footer-logo">
+        <img src="../1418427-technomart-29/img/logo.svg" width="220" height="68" alt="">
+        <div class="footer-contacts">
+          <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="footer-phone">+7 (812) 555-05-55</p>
+        </div>
+      </div>
+      <div class="nav-footer-wrap">
+        <ul class="nav-footer-list">
+          <li class="nav-footer-item">
+            <a class="nav-footer-link" href="#">Компания</a>
           </li>
-          <li class="social-item">
-            <a class="social-link" href="#">
-              <img src="../1418427-technomart-29/img/facebook.png" width="44" height="44" alt="Facebook">
-            </a>
+          <li class="nav-footer-item">
+            <a class="nav-footer-link" href="catalog.html">Каталог</a>
           </li>
-          <li class="social-item">
-            <a class="social-link" href="#">
-              <img src="../1418427-technomart-29/img/instagram.png" width="44" height="44" alt="Instagram">
-            </a>
+          <li class="nav-footer-item">
+            <a class="nav-footer-link" href="#">Новости</a>
+          </li>
+          <li class="nav-footer-item">
+            <a class="nav-footer-link" href="#">Доставка</a>
+          </li>
+          <li class="nav-footer-item">
+            <a class="nav-footer-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="footer-features-list">
+          <li class="footer-feature-item">
+            <a class="footer-feature-link" href="#">Материалы</a>
+          </li>
+          <li class="footer-feature-item">
+            <a class="footer-feature-link" href="#">Техника</a>
+          </li>
+          <li class="footer-feature-item">
+            <a class="footer-feature-link" href="#">Инструмент</a>
+          </li>
+          <li class="footer-feature-item">
+            <a class="footer-feature-link" href="#">Спецпредложения</a>
           </li>
         </ul>
       </div>
-      <p class="footer-email">
-        Обратная связь:<br>
-        <a class="footer-email-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      </p>
-      <p class="footer-academy">
-        Разработано —<br>
-        <a class="academy-link" href="https://htmlacademy.ru/">htmlacademy.ru</a>
-      </p>
+    </div>
+    <section class="footer-bot">
+      <div class="footer-bot-wrap">
+        <p class="copyright-text">
+          © 2010–2019 Компания «Техномарт»<br>
+          Все права защищены
+        </p>
+        <div class="socials">
+          <h2 class="visually-hidden">Соцсети</h2>
+          <ul class="socials-list">
+            <li class="social-item">
+              <a class="social-link" href="#">
+                <img src="../1418427-technomart-29/img/VK.png" width="44" height="44" alt="Вконтакте">
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#">
+                <img src="../1418427-technomart-29/img/facebook.png" width="44" height="44" alt="Facebook">
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#">
+                <img src="../1418427-technomart-29/img/instagram.png" width="44" height="44" alt="Instagram">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer-email">
+          Обратная связь:<br>
+          <a class="footer-email-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </p>
+        <p class="footer-academy">
+          Разработано —<br>
+          <a class="academy-link" href="https://htmlacademy.ru/">htmlacademy.ru</a>
+        </p>
+      </div>
     </section>
   </footer>
 </body>
