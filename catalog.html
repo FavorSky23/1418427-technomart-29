@@ -18,7 +18,8 @@
           <img class="logo" src="../1418427-technomart-29/img/logo_text.svg" width="106" height="16" alt="">
         </span>
         <div class="search-top">
-          <input class="page-header-search" type="search" name="search" placeholder="Поиск:" value="Поиск:">
+          <input class="page-header-search" type="search" name="search" value="Поиск:">
+          <img class="search-icon" src="../1418427-technomart-29/img/search_icon.svg" width="17" height="17" alt="">
         </div>
         <a class="bookmarks-link" href="#">Закладки: 0</a>
         <a class="cart-link" href="#">Корзина: 0</a>
@@ -86,15 +87,12 @@
           </a>
         </li>
         <li class="breadcrumbs-item">
-          <img src="../1418427-technomart-29/img/right_icon_small.svg" width="8" height="12" alt="">
           <a>Каталог</a>
         </li>
         <li class="breadcrumbs-item">
-          <img src="../1418427-technomart-29/img/right_icon_small.svg" width="8" height="12" alt="">
           <a href="#">Инструмент</a>
         </li>
         <li class="breadcrumbs-item">
-          <img src="../1418427-technomart-29/img/right_icon_small.svg" width="8" height="12" alt="">
           <a>Перфораторы</a>
         </li>
       </ul>
@@ -136,31 +134,61 @@
             </fieldset>
             <!-- Другие элементы формы -->
           </form>
+          <img src="../1418427-technomart-29/img/horizontal_line.png" width="220" height="1" alt="">
+          <p class="filter-producers-caption">Производители:</p>
           <ul class="filter-producers">
-            <legend>Производители:</legend>
-            <li>
-              <input type="checkbox" checked> Bosch
+            <li class="producer-name option">
+              <label class="check">
+                <input class="check-input" type="checkbox" checked>
+                <span class="check-box"></span>
+                Bosch
+              </label>
             </li>
-            <li>
-              <input type="checkbox"> Интерскол
+            <li class="producer-name option">
+              <label class="check">
+                <input class="check-input" type="checkbox">
+                <span class="check-box"></span>
+                Интерскол
+              </label>
             </li>
-            <li>
-              <input type="checkbox" checked> Makita
+            <li class="producer-name">
+              <label class="check">
+                <input class="check-input" type="checkbox" checked>
+                <span class="check-box"></span>
+                Makita
+              </label>
             </li>
-            <li>
-              <input type="checkbox"> Dewalt
+            <li class="producer-name">
+              <label class="check">
+                <input class="check-input" type="checkbox">
+                <span class="check-box"></span>
+                DeWalt
+              </label>
             </li>
-            <li>
-              <input type="checkbox"> Hitachi
+            <li class="producer-name">
+              <label class="check">
+                <input class="check-input" type="checkbox">
+                <span class="check-box"></span>
+                Hitachi
+              </label>
             </li>
           </ul>
-          <ul class="power-type">
-            <legend>Питание:</legend>
-            <li>
-              <input type="checkbox" checked> Аккумуляторные
+          <img src="../1418427-technomart-29/img/horizontal_line.png" width="220" height="1" alt="">
+          <p class="power-type-caption">Питание:</p>
+          <ul class="power-type-list">
+            <li class="power-type">
+              <label class="check">
+                <input class="check-input" type="checkbox" checked>
+                <span class="radio"></span>
+                Аккумуляторные
+              </label>
             </li>
-            <li>
-              <input type="checkbox"> Сетевые
+            <li class="power-type">
+              <label class="check">
+                <input class="check-input" type="checkbox">
+                <span class="radio"></span>
+                Сетевые
+              </label>
             </li>
           </ul>
           <div class="show-results">
@@ -179,102 +207,90 @@
           <section class="catalog-products-list">
             <h2 class="visually-hidden">Список товаров</h2>
             <article class="product-item">
+              <img class="item-img" src="../1418427-technomart-29/img/BFG_6000.png" width="144" height="128" alt="">
+              <button class="add-item-cart add-cart" type="button" name="buy">Купить</button>
+              <button class="add-item-book add-bookmark" type="button" name="addtobookmarks"></button>
               <a class="product-link item-one" href="#">
-                <div class="img-wrap">
-                  <img src="../1418427-technomart-29/img/BFG_6000.png" width="144" height="128" alt="">
-                </div>
-                <button class="add-item-cart add-cart" type="button" name="buy">Купить</button>
-                <button class="add-item-book add-bookmark" type="button" name="addtobookmarks"></button>
-                <div>
-                  <p class="product-name">Перфоратор BOSCH BFG 6000</p>
-                </div>
-                <p class="old-price catalog-old">30500 Р.</p>
+                <p class="product-name name-6000">Перфоратор BOSCH BFG 6000</p>
               </a>
+              <p class="old-price catalog-old">30500 Р.</p>
               <button class="buy-item price" type="button" name="buy">25500 Р.</button>
             </article>
             <article class="product-item">
+              <img class="item-img" src="../1418427-technomart-29/img/BFG_6000.png" width="144" height="128" alt="">
+              <button class="add-item-cart add-cart" type="button" name="buy">Купить</button>
+              <button class="add-item-book add-bookmark" type="button" name="addtobookmarks"></button>
               <a class="product-link" href="#">
-                <div class="img-wrap">
-                  <img src="../1418427-technomart-29/img/BFG_6000.png" width="144" height="128" alt="">
-                </div>
-                <button class="add-item-cart add-cart" type="button" name="buy">Купить</button>
-                <button class="add-item-book add-bookmark" type="button" name="addtobookmarks"></button>
-                <div>
-                  <p class="product-name">Перфоратор BOSCH BFG 6000</p>
-                </div>
-                <p class="old-price catalog-old">30500 Р.</p>
+                <p class="product-name name-6000">Перфоратор BOSCH BFG 6000</p>
               </a>
+              <p class="old-price catalog-old">30500 Р.</p>
               <button class="buy-item price" type="button" name="buy">25500 Р.</button>
             </article>
-            <article class="product-item special-card">
-              <img class="special-new" src="../1418427-technomart-29/img/catalog_new.svg" width="70" height="70" alt="">
-              <button class="add-cart" type="button" name="buy">Купить</button>
-              <button class="add-bookmark" type="button" name="addtobookmarks"></button>
-              <p class="product-name special-item-name"> Перфоратор BOSCH BFG 6000</p>
-              <p class="old-price catalog-old special-item-old">30500 Р.</p>
+            <article class="product-item new-item">
+              <img class="item-img" src="../1418427-technomart-29/img/BFG_6000.png" width="144" height="128" alt="">
+              <button class="add-item-cart add-cart" type="button" name="buy">Купить</button>
+              <button class="add-item-book add-bookmark" type="button" name="addtobookmarks"></button>
+              <a class="product-link item-one" href="#">
+                <p class="product-name name-6000">Перфоратор BOSCH BFG 6000</p>
+              </a>
+              <p class="old-price catalog-old">30500 Р.</p>
               <button class="buy-item price" type="button" name="buy">25500 Р.</button>
             </article>
-            <article class="product-item">
-              <img class="new-product" src="../1418427-technomart-29/img/catalog_new.svg" width="70" height="70" alt="">
+            <article class="product-item new-item">
+              <img class="item-img" src="../1418427-technomart-29/img/BFG_3000.png" width="127" height="112" alt="">
+              <button class="add-item-cart add-cart" type="button" name="buy">Купить</button>
+              <button class="add-item-book add-bookmark" type="button" name="addtobookmarks"></button>
               <a class="product-link" href="#">
-                <div class="img-wrap">
-                  <img src="../1418427-technomart-29/img/BFG_3000.png" width="127" height="112" alt="">
-                </div>
-                <p class="product-name new-name">Перфоратор BOSCH BFG 3000</p>
-                <p class="old-price catalog-old">22500 Р.</p>
+                <p class="product-name name-3000">Перфоратор BOSCH BFG 3000</p>
               </a>
+              <p class="old-price catalog-old">22500 Р.</p>
               <button class="buy-item price" type="button" name="buy">15500 Р.</button>
             </article>
             <article class="product-item">
+              <img class="item-img" src="../1418427-technomart-29/img/BFG_6000.png" width="144" height="128" alt="">
+              <button class="add-item-cart add-cart" type="button" name="buy">Купить</button>
+              <button class="add-item-book add-bookmark" type="button" name="addtobookmarks"></button>
               <a class="product-link" href="#">
-                <div class="img-wrap">
-                  <img src="../1418427-technomart-29/img/BFG_6000.png" width="144" height="128" alt="">
-                </div>
-                <button class="add-item-cart add-cart" type="button" name="buy">Купить</button>
-                <button class="add-item-book add-bookmark" type="button" name="addtobookmarks"></button>
-                <p class="product-name">Перфоратор BOSCH BFG 6000</p>
-                <p class="old-price catalog-old">30500 Р.</p>
+                <p class="product-name name-6000">Перфоратор BOSCH BFG 6000</p>
               </a>
+              <p class="old-price catalog-old">30500 Р.</p>
               <button class="button buy-item price" type="button" name="buy">25500 Р.</button>
             </article>
-            <article class="product-item">
-              <img class="new-product" src="../1418427-technomart-29/img/catalog_new.svg" width="70" height="70" alt="">
+            <article class="product-item new-item">
+              <img class="item-img" src="../1418427-technomart-29/img/BFG_2000.png" width="127" height="112" alt="">
+              <button class="add-item-cart add-cart" type="button" name="buy">Купить</button>
+              <button class="add-item-book add-bookmark" type="button" name="addtobookmarks"></button>
               <a class="product-link" href="#">
-                <div class="img-wrap">
-                  <img src="../1418427-technomart-29/img/BFG_2000.png" width="127" height="112" alt="">
-                </div>
-                <p class="product-name new-name">Перфоратор BOSCH BFG 2000</p>
+                <p class="product-name name-2000">Перфоратор BOSCH BFG 2000</p>
               </a>
               <button class="buy-item new-price" type="button" name="buy">12500 Р.</button>
             </article>
-            <article class="product-item">
-              <img class="new-product" src="../1418427-technomart-29/img/catalog_new.svg" width="70" height="70" alt="">
+            <article class="product-item new-item">
+              <img class="item-img" src="..//1418427-technomart-29/img/BFG_3000.png" width="127" height="112" alt="">
+              <button class="add-item-cart add-cart" type="button" name="buy">Купить</button>
+              <button class="add-item-book add-bookmark" type="button" name="addtobookmarks"></button>
               <a class="product-link" href="#">
-                <div class="img-wrap">
-                  <img src="..//1418427-technomart-29/img/BFG_3000.png" width="127" height="112" alt="">
-                </div>
-                <p class="product-name new-name">Перфоратор BOSCH BFG 3000</p>
-                <p class="old-price catalog-old">22500 Р.</p>
+                <p class="product-name name-3000">Перфоратор BOSCH BFG 3000</p>
               </a>
+              <p class="old-price catalog-old">22500 Р.</p>
               <button class="buy-item price" type="button" name="buy">15500 Р.</button>
             </article>
             <article class="product-item">
+              <img class="item-img" src="..//1418427-technomart-29/img/BFG_6000.png" width="144" height="128" alt="">
+              <button class="add-item-cart add-cart" type="button" name="buy">Купить</button>
+              <button class="add-item-book add-bookmark" type="button" name="addtobookmarks"></button>
               <a class="product-link" href="#">
-                <div class="img-wrap">
-                  <img src="..//1418427-technomart-29/img/BFG_6000.png" width="144" height="128" alt="">
-                </div>
-                <p class="product-name">Перфоратор BOSCH BFG 6000</p>
-                <p class="old-price catalog-old">30500 Р.</p>
+                <p class="product-name name-6000">Перфоратор BOSCH BFG 6000</p>
               </a>
+              <p class="old-price catalog-old">30500 Р.</p>
               <button class="buy-item price" type="button" name="buy">25500 Р.</button>
             </article>
-            <article class="product-item">
-              <img class="new-product" src="../1418427-technomart-29/img/catalog_new.svg" width="70" height="70" alt="">
+            <article class="product-item new-item">
+              <img class="item-img" src="..//1418427-technomart-29/img/BFG_2000.png" width="127" height="112" alt="">
+              <button class="add-item-cart add-cart" type="button" name="buy">Купить</button>
+              <button class="add-item-book add-bookmark" type="button" name="addtobookmarks"></button>
               <a class="product-link" href="#">
-                <div class="img-wrap">
-                  <img src="..//1418427-technomart-29/img/BFG_2000.png" width="127" height="112" alt="">
-                </div>
-                <p class="product-name new-name">Перфоратор BOSCH BFG 2000</p>
+                <p class="product-name name-2000">Перфоратор BOSCH BFG 2000</p>
               </a>
               <button class="buy-item new-price" type="button" name="buy">12500 Р.</button>
             </article>
@@ -371,18 +387,26 @@
           <h2 class="visually-hidden">Соцсети</h2>
           <ul class="socials-list">
             <li class="social-item">
-              <a class="social-link" href="#">
-                <img src="../1418427-technomart-29/img/VK.png" width="44" height="44" alt="Вконтакте">
+              <a class="social-link-vk" href="#">
+                <img class="social-vk" src="../1418427-technomart-29/img/VK.png" width="44" height="44" alt="Вконтакте">
+                <img class="social-vk-hover" src="../1418427-technomart-29/img/vk_hover.png" width="44" height="44"
+                  alt="Вконтакте">
               </a>
             </li>
             <li class="social-item">
-              <a class="social-link" href="#">
-                <img src="../1418427-technomart-29/img/facebook.png" width="44" height="44" alt="Facebook">
+              <a class="social-link-facebook" href="#">
+                <img class="social-facebook" src="../1418427-technomart-29/img/facebook.png" width="44" height="44"
+                  alt="Facebook">
+                <img class="social-facebook-hover" src="../1418427-technomart-29/img/facebook_hover.png" width="44"
+                  height="44" alt="Facebook">
               </a>
             </li>
             <li class="social-item">
-              <a class="social-link" href="#">
-                <img src="../1418427-technomart-29/img/instagram.png" width="44" height="44" alt="Instagram">
+              <a class="social-link-inst" href="#">
+                <img class="social-inst" src="../1418427-technomart-29/img/instagram.png" width="44" height="44"
+                  alt="Instagram">
+                <img class="social-inst-hover" src="../1418427-technomart-29/img/inst_hover.png" width="44" height="44"
+                  alt="Instagram">
               </a>
             </li>
           </ul>
